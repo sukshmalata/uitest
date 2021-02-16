@@ -1,0 +1,47 @@
+<script type="text/javascript" src="test.js"></script>
+
+<script type="text/javascript">
+    var result = iterateDiv()
+    var container = document.getElementById("container");
+    outerHtml.appendChild(result); 
+</script>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .item1 {
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Grid Lines</h1>
+
+    <div id="container" class="grid-container">
+        
+    </div>
+
+    <p>You can refer to line numbers when placing grid items.</p>
+
+</body>
+
+</html>
